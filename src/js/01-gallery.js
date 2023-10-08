@@ -1,8 +1,6 @@
-import { galleryItems } from './gallery-items.js';
-
 import SimpleLightbox from 'simplelightbox';
-
 import 'simplelightbox/dist/simple-lightbox.min.css';
+import { galleryItems } from './gallery-items.js';
 const gallery = document.querySelector('.gallery');
 const galleryMarkup = createGallery(galleryItems);
 gallery.insertAdjacentHTML('beforeend', galleryMarkup);
