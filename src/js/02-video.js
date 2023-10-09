@@ -3,7 +3,7 @@ import throttle from 'lodash.throttle';
 
 const iframe = document.getElementById('vimeo-player');
 const player = new Vimeo(iframe);
-const localStorage = window.localStorage;
+
 const localStorageKey = 'videoplayer-current-time';
 
 const saveCurrentTime = () => {
@@ -19,10 +19,3 @@ const restoreCurrentTime = () => {
 };
 player.on('timeupdate', throttle(saveCurrentTime, 1000));
 restoreCurrentTime();
-
-
-
-
-
-
-
